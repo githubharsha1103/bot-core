@@ -63,25 +63,25 @@ async def restart(client: Client, message: Message):
 async def setprice(client: Client, message: Message):
     args = message.text.split()
     if len(args) != 4 or args[0].lower() != "/setprice":
-        await message.reply("Usage:\n/setprice <premium|vip> <30|90|180|360> <stars>")
+        await message.reply("Usage:\n/setprice <premium|vip> <7|30|90|180|360> <stars>")
         message.stop_propagation()
         return
 
     plan_type = args[1].lower()
     if plan_type not in ("premium", "vip"):
-        await message.reply("Usage:\n/setprice <premium|vip> <30|90|180|360> <stars>")
+        await message.reply("Usage:\n/setprice <premium|vip> <7|30|90|180|360> <stars>")
         message.stop_propagation()
         return
 
     duration_arg = args[2]
-    if duration_arg not in ("30", "90", "180", "360"):
+    if duration_arg not in ("7", "30", "90", "180", "360"):
         await message.reply("❌ Package not found.")
         message.stop_propagation()
         return
 
     stars_arg = args[3]
     if not stars_arg.isdigit() or int(stars_arg) <= 0:
-        await message.reply("Usage:\n/setprice <premium|vip> <30|90|180|360> <stars>")
+        await message.reply("Usage:\n/setprice <premium|vip> <7|30|90|180|360> <stars>")
         message.stop_propagation()
         return
 

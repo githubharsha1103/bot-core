@@ -10,6 +10,14 @@
     "premium": {
         "packages": [
             {
+                "id": 6,
+                "price": [
+                    100,
+                    99
+                ],
+                "duration": 7
+            },
+            {
                 "id": 2,
                 "price": [
                     350,
