@@ -1,0 +1,24 @@
+{
+   "creators": [
+      {
+         "name": "Giulia",
+         "username": "badgiulia",
+         "album": true,
+         "can_chat": false,
+         "album_data": [
+            -1003650708940,
+            53
+         ]
+      },
+      {
+         "name": "Ava",
+         "username": "heyava",
+         "album": true,
+         "can_chat": false,
+         "album_data": [
+            -1003650708940,
+            49
+         ]
+      }
+   ]
+}

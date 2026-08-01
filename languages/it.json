@@ -1,0 +1,182 @@
+{
+    "language_name": "Italiano 🇮🇹",
+    "signup": {
+        "welcome": "**Benvenuto nel bot!** 👋\n\nSeleziona la tua lingua 👇",
+        "sex": "Seleziona il tuo sesso 👇",
+        "sexbtn": {
+            "male": "🚹 Sono maschio",
+            "female": "🚺 Sono femmina"
+        },
+        "signup_done": "✅ **Registrazione completata!**"
+    },
+    "welcome": "👋 **Benvenuto nel bot! \n\n🚀 Usa il menu** 👇 sotto per iniziare la conversazione.",
+    "paysupport_text": "🆘 **Hai bisogno di supporto?**\n\nContatta il nostro team per assistenza! ➡️ @{}",
+    "startbtn": [
+        [
+            "🎲 Trova Partner"
+        ],
+        [
+            "👩 Trova Ragazza",
+            "👨 Trova Ragazzo"
+        ],
+        [
+            "🔥 Ragazze Hot (18+)"
+        ]
+    ],
+    "sexchat": {
+        "warning": "🛡️ **Verifica di Sicurezza**\n\n__Gentile utente, benvenuto.__ 👋\n\nPer garantire un'esperienza sicura e conforme, l'accesso a questo servizio è riservato.\n\nCliccando sul tasto in basso confermi formalmente di:\n🔸 Essere **maggiorenne (18+)**.\n🔸 Aver letto e accettato i [termini e condizioni](https://telegra.ph/Terms-and-Conditions--Flirty-12-31) del bot.\n\n__⚠️ Le violazioni dei termini comporteranno l'esclusione immediata.__",
+        "accept": "✅ Accetto",
+        "accepted": "🥳 **Termini Accettati!**\n\nOra puoi chattare con le ragazze.",
+        "girls_intro": "🔥 **LE NOSTRE STAR** 🔥\n\nPreparati a vivere emozioni forti! Qui trovi le nostre Creator Ufficiali, pronte a soddisfare ogni tuo desiderio. 💋\n\n💎 **Vantaggi VIP:** Chat illimitata inclusa nel tuo abbonamento!\n🌶️ **Contenuti Hot:** Richiedi foto, video e vivi la vera passione.\n\n👇 *Seleziona una ragazza e inizia l'avventura...*",
+        "creator_profile": "Hai scelto **{name}**! 💖\n\n🔥 **Ottima scelta!**\nScegli una delle opzioni disponibili qui sotto per iniziare 👇",
+        "start_chat": "💬 Inizia Chat",
+        "album_photo": "🔞 Album Foto",
+        "info": "🚀 **BENVENUTO NELLA ZONA HOT** 🚀\n\n✨ *Scegli l'esperienza definitiva:*\n\n👑 **VIP CLUB** — Unisciti al gruppo esclusivo con contenuti 18+.\n👩 **REAL GIRLS** — Il meglio di OnlyFans e contenuti esclusivi dal vivo.\n\n--- **COSA TI ASPETTA** ---\n🎬 **Contenuti Non Censurati** senza censure\n📸 **Set Esclusivi** mai pubblicati prima\n🎁 **Interazioni Premium** e vantaggi riservati\n\n🔄 *Passa da un mondo all'altro con un semplice clic!*\n\n⭐ **DOUBLE EXPERIENCE** — Il doppio del piacere a tua completa disposizione!",
+        "menu_btn": [
+            [
+                "❤️‍🔥 REAL GIRLS",
+                "👑 VIP CLUB"
+            ],
+            [
+                "🔙 Indietro"
+            ]
+        ],
+        "album_info": "**🚀 NUOVI ARRIVI OGNI MESE! 🚀**\n\nNon perderti neanche un dettaglio! 🔞\nL'album è in **costante crescita**. Ogni 30 giorni aggiungiamo **nuovi contenuti 18+** per mantenere l'eccitazione al massimo. 🍑✨\n\n📸 __Nuove Foto__\n📽️ __Nuovi Video__\n\n**Torna spesso per non perderti nulla! 🍒**",
+        "album_not_found": "❌ **ANCORA NESSUN CONTENUTO** ❌\n\nQuesto creator non ha ancora caricato foto nell'album. 😔\n\n**Resta sintonizzato!** Nuovi contenuti vengono aggiunti frequentemente. Torna presto per non perderti le novità! 🔥",
+        "vip_group_info": "👑 **BENVENUTO NEL VIP CLUB** 👑\n\n✨ Unisciti al gruppo esclusivo per i membri VIP!\n\n🔹 Contenuti inediti\n🔹 Anteprime esclusive\n🔹 Chat prioritaria\n\n__L'approvazione nel gruppo è immediata.__\n👇 Clicca qui sotto per entrare!",
+        "join_group": "🍑 ENTRA"
+    },
+    "settings": {
+        "label": "⚙️ **Impostazioni**\n\n🔐 **Inoltro:** {}\n🫣 **Foto/Video:** {}",
+        "bool": {
+            "forward": {
+                "1": "Abilitato",
+                "0": "Disabilitato"
+            },
+            "hidecontent": {
+                "1": "Nascosto",
+                "0": "Visibile"
+            }
+        },
+        "buttons": {
+            "forward": {
+                "0": "🔒 Disabilita Inoltro",
+                "1": "🔐 Abilita Inoltro"
+            },
+            "hidecontent": {
+                "0": "👁️ Mostra Contenuto",
+                "1": "👁️‍🗨️ Nascondi Contenuto"
+            },
+            "lang": {
+                "labelbtn": "🌐 Cambia Lingua",
+                "labeltext": "🌐 **Seleziona Lingua / Choose Language**",
+                "done": "✅ **Lingua cambiata!**"
+            }
+        }
+    },
+    "chat": {
+        "waiting_match": "__🚀 In attesa di un abbinamento...__\n\n/stop - Annulla ricerca",
+        "match_found": "⚡️ **Hai un match!** ⚡️\n🔹__Genere:__ {}\n\n/link - Condividi link\n/stop - Esci dalla chat",
+        "label_gender": "||solo --premium--||",
+        "stopped": {
+            "search": "🛑 **Ricerca annullata**",
+            "you": "🤚 **Hai lasciato la chat**",
+            "partner": "🔴 **Il tuo partner ha lasciato la chat**"
+        },
+        "partnertext": "▶️ **Clicca il pulsante qui sotto per aprire l'account Telegram del tuo interlocutore**\n\n__Inviato usando il comando /link__",
+        "delaylink": "⏳ Attendi 1 minuto prima di inviare nuovamente il link.",
+        "linksent": "⛓️ **Link inviato!**",
+        "nolinksent": "🚧 **Per inviare il tuo link, imposta un username nel tuo account Telegram**",
+        "btnshareprofile": "📤️ Visualizza Profilo dell'Interlocutore",
+        "no_links": "⚠️ **Non è permesso inviare link o username!**",
+        "media_expired": "⚠️ **Il media non può essere inviato** - Per favore, rinvia il file."
+    },
+    "commands": {
+        "match": "👤 Trova un utente casuale",
+        "link": "🔗 Invia il link del tuo profilo Telegram al tuo interlocutore",
+        "stop": "🛑 Termina la conversazione",
+        "report": "🚨 Reporta un utente",
+        "vip": "👑 Diventa un Utente VIP",
+        "settings": "⚙️ Modifica le tue impostazioni",
+        "promocode": "🎟️ Usa un codice promozionale per i pacchetti premium",
+        "premium": "💎 Acquista/Gestisci Premium",
+        "paysupport": "🆘 Per ricevere supporto",
+        "about": "❓ Per vedere l'aiuto, le regole e i termini del bot"
+    },
+    "promocode": {
+        "text_input": "🎟️ **Codice Promo**\n\n__Inserisci il tuo codice promozionale__",
+        "valid": "✅ **Codice Promo Applicato!**\n\nHai ottenuto uno sconto del {}% su tutti i pacchetti.",
+        "invalid": "❌ **Codice Promo Non Valido**\n\nControlla il codice e riprova con /promocode",
+        "already_active": "⚠️ **Codice Promo Già Attivo**\n\nHai già uno sconto del {}% applicato.",
+        "expired_alert": "⚠️ **Il codice promozionale non è più attivo!**"
+    },
+    "subscription": {
+        "info": "🔥 **Vantaggi del Piano Premium**\n\nSblocca l'esperienza completa con il nostro Piano Premium! Ecco cosa ottieni:\n\n1. 👩‍❤️‍💋‍👨 **Abbinamento Basato sul Genere: **Scegli se vuoi abbinarti con ragazzi o ragazze — dipende da te!\n2. ❌ **Esperienza Senza Pubblicità : **Goditi conversazioni ininterrotte senza alcuna pubblicità.\n3. 📸 **Invia Foto, GIF e Video: **Gli utenti Premium possono condividere contenuti multimediali ricchi per rendere le chat più espressive e divertenti.\n4. **🚀Canale di abbinamento prioritario: **Efficienza di abbinamento X10\n5. 🌐 **Traduci messaggi:** Traduci i messaggi del tuo partner.\n6. 🧩 **No Captcha:** Inizia a chattare istantaneamente senza verifiche.\n\n__Non verranno emessi rimborsi.__\n**Seleziona la durata da acquistare. **__Più lunga è la durata, maggiore è lo sconto!__👇",
+        "info_vip": "👑 **Vantaggi del Piano VIP**\n\nSblocca l'esperienza DEFINITIVA con il nostro Piano VIP! Include tutte le funzionalità Premium più:\n\n1. 🌟 **Massima Visibilità:** Il tuo profilo appare per primo nei risultati di ricerca.\n2. 🚀 **Abbinamento Prioritario:** Trova abbinamenti più velocemente di chiunque altro.\n3. ✨ **Status Esclusivo:** Ottieni un badge VIP unico sul tuo profilo.\n4. 🔥 **Accesso alla Ragazze Hot (18+):** Sblocca la sezione esclusiva per adulti!\n\n__Non verranno emessi rimborsi.\n__**Seleziona la durata da acquistare. **__Più lunga è la durata, maggiore è lo sconto!__👇",
+        "btn_buy": "💳 Acquista Premium",
+        "btn_buy_vip": "💳 Acquista VIP",
+        "packages": "📦 **Seleziona un pacchetto:**",
+        "back": "🔙 Indietro",
+        "payment_method": "💳 **Seleziona Metodo di Pagamento:**",
+        "choose_network": "🌐 **Seleziona la rete:**",
+        "success": "🎉 **Pagamento Riuscito!**\n\nIl tuo abbonamento premium è attivo fino al {expiry}.",
+        "close": "❌ Chiudi",
+        "days": {
+            "7": "1 settimana",
+            "30": "1 mese",
+            "90": "3 mesi",
+            "180": "6 mesi",
+            "360": "1 anno"
+        },
+        "sub_required": "⭐️😔 **Abbonamento richiesto**\n\nPer utilizzare questa funzionalità, hai bisogno di avere un abbonamento.",
+        "sub_required_sticker": "⭐️😔 **Abbonamento richiesto**\n\nPer inviare sticker personalizzati, hai bisogno di avere un abbonamento.",
+        "crypto_message": "💰 **Invia l'importo esatto ai seguenti dettagli:**\n\n💵 **Importo Totale:** $`{}`\n🌐 **Rete:** {}\n\n👛 **Indirizzo di Deposito:** `{}`\n\n⚠️ **NOTA BENE:** Hai solo **15 minuti** per effettuare il pagamento. [‎]({})\n\n__Se l'importo è inferiore a quello richiesto, il pagamento potrebbe essere ignorato.__",
+        "error_payment": "😔 **Si è verificato un errore durante il processo di pagamento**",
+        "successful_payment_crypto": "🥳 *Pagamento effettuato con successo!*\n\nIl tuo abbonamento premium scadrà il {expiry}.",
+        "pay_info": "**Completa il tuo pagamento usando il pulsante qui sotto** 👇💳",
+        "pay_btn": "⭐️ Paga",
+        "pay_btn_crypto": "₿ Paga",
+        "type_payments": {
+            "stars": "⭐️ Stelle",
+            "crypto": {
+                "usdt": "₿ USDT"
+            }
+        },
+        "expired": "⏳😔 **Il tuo abbonamento è scaduto!**\n\nRinnova ora per continuare a godere dei vantaggi esclusivi.",
+        "status_active": "⏳ **Il tuo abbonamento è Attivo!**\n\n💎 **Piano:** {plan}\n📅 **Scade il:** {expiry}",
+        "upgrade_to_vip": "⭐️ **Aggiorna al VIP!**\n\n💎 Per utilizzare questa funzionalità, per favore, aggiorna il tuo abbonamento a **VIP** ✨"
+    },
+    "about_text": "🤖 **Info su Flirty Bot**\n\nFlirty è il tuo compagno di chat anonima avanzato! 🚀\n\n**Funzionalità Principali:**\n🎲 **Chat Casuale:** Connettiti istantaneamente con sconosciuti.\n🚻 **Selezione Genere:** Scegli di chattare con Maschi o Femmine (Premium).\n😈 **Ragazze Hot (18+):** Modalità per adulti verificata per conversazioni piccanti.\n\n**Vantaggi Premium:**\n✨ Filtro genere\n📸 Condivisione Foto/Video\n🚫 Nessuna pubblicità\n🌐 Traduzione in tempo reale\n\nRimani anonimo e divertiti! 🛡️",
+    "ban_alert": "🚫 **Sei stato bannato!** 😔\n\nNon puoi utilizzare il bot",
+    "unban_alert": "🎉 **Congratulazioni! Sei stato sbannato!**\n\nOra puoi utilizzare nuovamente il bot. Goditi la tua chat! 😉",
+    "unban_btn": "💳 Acquista Unban",
+    "unban_buy": "✨ Clicca il pulsante qui sotto per **acquistare un unban**! 💳",
+    "unban_too_many": "🚫 Hai raggiunto il limite di 5 ban!\n\nNon puoi utilizzare il bot",
+    "report": {
+        "btn": "🚨 Reporta Utente",
+        "text": "🚨 **Reporta Utente**\n\n__Seleziona la ragione per reportare l'utente__",
+        "reason": {
+            "spam": "📰 Spam",
+            "selling": "🛒 Vendita",
+            "child": "🔞 Pornografia minorile",
+            "insults": "🤬 Insulti"
+        },
+        "success": "🚨 **Utente reportato con successo!**\n\n🙏 Grazie per aiutare a mantenere la community sicura!",
+        "no_user": "⚠️ Nessun utente recente trovato per reportare."
+    },
+    "comingsoon": "⚡ __Questa funzionalità è in arrivo__",
+    "vip_label": "👑 **Sei in chat con un utente VIP**\n",
+    "captcha": {
+        "go": "🧩 **Completa il Captcha**",
+        "expired": "⏳⚠️ **Captcha scaduto!**\n\nPer favore, riprova. 🔄",
+        "failed": "❌ Captcha Errato"
+    },
+    "feedback": {
+        "already_submitted": "✅ **Hai già inviato il tuo feedback!**\n\n🙏 Grazie per il tuo contributo.",
+        "prompt": "📝 **Ci piacerebbe ricevere il tuo feedback!**\n\nScrivi il tuo breve messaggio qui sotto 👇\n⚡ Max 200 caratteri",
+        "too_long": "⚠️ **Messaggio troppo lungo!**\n\n📏 Lunghezza attuale: **{count}**/200 caratteri\n✂️ Accorcia il messaggio e riprova con `/feedback`.",
+        "success": "🎉 **Grazie per il tuo feedback!**\n\n✅ La tua segnalazione è stata ricevuta con successo.\n\n🙏 Apprezziamo davvero il tuo tempo!",
+        "error": "❌ **Ops, qualcosa è andato storto!**\n\n🔄 Riprova più tardi.",
+        "timeout": "⏰ **Feedback scaduto!**\n\nNon hai risposto in tempo.\n💡 Digita `/feedback` per ricominciare."
+    }
+}

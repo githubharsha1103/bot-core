@@ -1,0 +1,182 @@
+{
+    "language_name": "O'zbek 🇺🇿",
+    "signup": {
+        "welcome": "**Botga xush kelibsiz!** 👋\n\nTilni tanlang 👇",
+        "sex": "Jinsingizni tanlang 👇",
+        "sexbtn": {
+            "male": "🚹 Erkakman",
+            "female": "🚺 Ayolman"
+        },
+        "signup_done": "✅ **Ro'yxatdan o'tish yakunlandi!**"
+    },
+    "welcome": "👋 **Botga xush kelibsiz! \n\n🚀 Suhbatni boshlash uchun quyidagi menyudan foydalaning** 👇",
+    "paysupport_text": "🆘 **Yordam kerakmi?**\n\nJamoamiz bilan bog'laning! ➡️ @{}",
+    "startbtn": [
+        [
+            "🎲 Sherik topish"
+        ],
+        [
+            "👩 Qiz topish",
+            "👨 Yigit topish"
+        ],
+        [
+            "🔥 Qaynoq qizlar (18+)"
+        ]
+    ],
+    "sexchat": {
+        "warning": "🛡️ **Xavfsizlik tekshiruvi**\n\n__Hurmatli foydalanuvchi, xush kelibsiz.__ 👋\n\nXavfsiz va qoidalarga mos tajribani ta'minlash uchun ushbu xizmatdan foydalanish cheklangan.\n\nQuyidagi tugmani bosish orqali siz rasman tasdiqlaysizki:\n🔸 Siz **voyaga yetgansiz (18+)**.\n🔸 Siz botning [shartlari va qoidalari](https://telegra.ph/Terms-and-Conditions--Flirty-12-31) bilan tanishdingiz va qabul qildingiz.\n\n__⚠️ Qoidalarni buzish darhol chetlatilishga olib keladi.__",
+        "accept": "✅ Qabul qilaman",
+        "accepted": "🥳 **Shartlar qabul qilindi!**\n\nEndi qizlar bilan gaplashishingiz mumkin.",
+        "girls_intro": "🔥 **BIZNING YULDUZLARIMIZ** 🔥\n\nKuchli his-tuyg'ularga tayyorlaning! Bu yerda siz barcha istaklaringizni qondirishga tayyor bo'lgan rasmiy ijodkorlarimizni topasiz. 💋\n\n💎 **VIP Imtiyozlar:** Obuna doirasida cheksiz suhbat!\n🌶️ **Qaynoq kontent:** Rasm, video so'rang va haqiqiy ehtirosni his qiling.\n\n👇 *Qizni tanlang va sarguzashtni boshlang...*",
+        "creator_profile": "Siz **{name}** ni tanladingiz! 💖\n\n🔥 **Ajoyib tanlov!**\nBoshlash uchun quyidagi variantlardan birini tanlang 👇",
+        "start_chat": "💬 Suhbatni boshlash",
+        "album_photo": "🔞 Fotoalbom",
+        "info": "🚀 **QAYNOQ HUDUDGA XUSH KELIBSIZ** 🚀\n\n✨ *Eng yaxshi tajribani tanlang:*\n\n👑 **VIP CLUB** — 18+ kontentli eksklyuziv guruhga qo'shiling.\n👩 **HAQIQIY QIZLAR** — OnlyFans va eksklyuziv jonli kontentning eng yaxshisi.\n\n--- **SIZNI NIMA KUTMOQDA** ---\n🎬 **Tsenzurasiz kontent** cheklovlar va tsenzurasiz\n📸 **Eksklyuziv to'plamlar** oldin hech qayerda e'lon qilinmagan\n🎁 **Premium muloqot** va maxsus imtiyozlar\n\n🔄 *Dunyo o'zgartirish uchun oddiy bosish yetarli!*\n\n⭐ **IKKI KARRA TAJRIBA** — Sizning to'liq ixtiyoringizda ikki baravar zavq!",
+        "menu_btn": [
+            [
+                "❤️‍🔥 HAQIQIY QIZLAR",
+                "👑 VIP CLUB"
+            ],
+            [
+                "🔙 Orqaga"
+            ]
+        ],
+        "album_info": "**🚀 HAR OY YANGI NARSALAR! 🚀**\n\nBatafsil ma'lumotni o'tkazib yubormang! 🔞\nAlbom **doimiy ravishda o'sib bormoqda**. Har 30 kunda biz hayajonni maksimal darajada ushlab turish uchun **yangi 18+ kontent** qo'shamiz. 🍑✨\n\n📸 __Yangi Rasmlar__\n📽️ __Yangi Videolar__\n\n**Yangiliklarni o'tkazib yubormaslik uchun tez-tez tekshirib turing! 🍒**",
+        "album_not_found": "❌ **Hozircha KONTENT YO'Q** ❌\n\nBu ijodkor hali albomga rasm yuklagani yo'q. 😔\n\n**Kuzatib boring!** Yangi kontent tez-tez qo'shiladi. Yangiliklarni o'tkazib yubormaslik uchun tez orada qaytib keling! 🔥",
+        "vip_group_info": "👑 **VIP KLUBGA XUSH KELIBSIZ** 👑\n\n✨ VIP a'zolar uchun eksklyuziv guruhga qo'shiling!\n\n🔹 Cheklovsiz kontent\n🔹 Eksklyuziv prevyular\n🔹 Ustuvor suhbat\n\n__Guruhga tasdiqlash darhol amalga oshiriladi.__\n👇 Qo'shilish uchun quyidagi tugmani bosing!",
+        "join_group": "🍑 QO'SHILISH"
+    },
+    "settings": {
+        "label": "⚙️ **Sozlamalar**\n\n🔐 **Uzatish:** {}\n🫣 **Rasm/Video:** {}",
+        "bool": {
+            "forward": {
+                "1": "Yoqilgan",
+                "0": "O'chirilgan"
+            },
+            "hidecontent": {
+                "1": "Yashirilgan",
+                "0": "Ko'rinadigan"
+            }
+        },
+        "buttons": {
+            "forward": {
+                "0": "🔒 Uzatishni o'chirish",
+                "1": "🔐 Uzatishni yoqish"
+            },
+            "hidecontent": {
+                "0": "👁️ Kontentni ko'rsatish",
+                "1": "👁️‍🗨️ Kontentni yashirish"
+            },
+            "lang": {
+                "labelbtn": "🌐 Tilni o'zgartirish",
+                "labeltext": "🌐 **Tilni tanlang / Choose Language**",
+                "done": "✅ **Til o'zgartirildi!**"
+            }
+        }
+    },
+    "chat": {
+        "waiting_match": "__🚀 Sherik qidirilmoqda...__\n\n/stop - Qidiruvni bekor qilish",
+        "match_found": "⚡️ **Sherik topildi!** ⚡️\n🔹__Jinsi:__ {}\n\n/link - Havola yuborish\n/stop - Suhbatni tugatish",
+        "label_gender": "||faqat--premium||",
+        "stopped": {
+            "search": "🛑 **Qidiruv bekor qilindi**",
+            "you": "🤚 **Siz suhbatni tark etdingiz**",
+            "partner": "🔴 **Sherigingiz suhbatni tark etdi**"
+        },
+        "partnertext": "▶️ **Sherigingizning Telegram akkauntini ochish uchun quyidagi tugmani bosing**\n\n__/link buyrug'i yordamida yuborilgan__",
+        "delaylink": "⏳ Iltimos, havolani qayta yuborishdan oldin 1 daqiqa kuting.",
+        "linksent": "⛓️ **Havola yuborildi!**",
+        "nolinksent": "🚧 **Havolani yuborish uchun Telegram akkauntingizda foydalanuvchi nomini sozlang**",
+        "btnshareprofile": "📤️ Sherik profilini ko'rish",
+        "no_links": "⚠️ **Havolalar yoki foydalanuvchi nomlarini yuborish taqiqlanadi!**",
+        "media_expired": "⚠️ **Media faylni yuborib bo'lmadi** - Iltimos, faylni qayta yuboring."
+    },
+    "commands": {
+        "match": "👤 Tasodifiy foydalanuvchini topish",
+        "link": "🔗 Telegram profil havolangizni sherigingizga yuboring",
+        "stop": "🛑 Suhbatni tugatish",
+        "report": "🚨 Foydalanuvchi ustidan shikoyat qilish",
+        "vip": "👑 VIP foydalanuvchi bo'lish",
+        "settings": "⚙️ Sozlamalarni tahrirlash",
+        "promocode": "🎟️ Premium paketlar uchun promo-koddan foydalanish",
+        "premium": "💎 Premium sotib olish/boshqarish",
+        "paysupport": "🆘 Yordam olish uchun",
+        "about": "❓ Bot haqida yordam, qoidalar va shartlar"
+    },
+    "promocode": {
+        "text_input": "🎟️ **Promo-kod**\n\n__Promo-kodingizni kiriting__",
+        "valid": "✅ **Promo-kod qabul qilindi!**\n\nSiz barcha paketlarga {}% chegirma oldingiz.",
+        "invalid": "❌ **Yaroqsiz promo-kod**\n\nKodn tekshiring va /promocode bilan qayta urinib ko'ring",
+        "already_active": "⚠️ **Promo-kod allaqachon faol**\n\nSizda allaqachon {}% chegirma mavjud.",
+        "expired_alert": "⚠️ **Promo-kod endi faol emas!**"
+    },
+    "subscription": {
+        "info": "🔥 **Premium Reja Imtiyozlari**\n\nPremium rejamiz bilan to'liq tajribani oching! Siz quyidagilarga ega bo'lasiz:\n\n1. 👩‍❤️‍💋‍👨 **Jins bo'yicha moslash:** Yigitlar yoki qizlar bilan gaplashishni tanlang — bu sizga bog'liq!\n2. ❌ **Reklamasiz tajriba:** Hech qanday reklamasiz uzluksiz suhbatlardan zavqlaning.\n3. 📸 **Rasm, GIF va Videolar yuboring:** Premium foydalanuvchilar suhbatlarni yanada mazmunli va qiziqarli qilish uchun media fayllarni ulashishlari mumkin.\n4. **🚀 Ustuvor moslash kanali:** X10 moslash samaradorligi\n5. 🌐 **Xabarlarni tarjima qilish:** Sherigingizning xabarlarini tarjima qiling.\n6. 🧩 **Captcha yo'q:** Hech qanday tekshiruvsiz darhol suhbatni boshlang.\n\n__To'lovlar qaytarilmaydi.__\n**Sotib olish davomiyligini tanlang.** __Davomiylik qancha uzoq bo'lsa, chegirma shuncha katta bo'ladi!__👇",
+        "info_vip": "👑 **VIP Reja Imtiyozlari**\n\nVIP Rejamiz bilan ULTIMATE tajribani oching! Barcha Premium xususiyatlar va quyidagilarni o'z ichiga oladi:\n\n1. 🌟 **Maksimal Ko'rinish:** Profilingiz qidiruv natijalarida birinchi bo'lib ko'rinadi.\n2. 🚀 **Ustuvor Moslash:** Boshqalarga qaraganda tezroq mosliklarni toping.\n3. ✨ **Eksklyuziv Status:** Profilingizda noyob VIP belgisini oling.\n4. 🔥 **Qaynoq Qizlarga Kirish (18+):** Eksklyuziv kattalar bo'limini oching!\n\n__To'lovlar qaytarilmaydi.__\n**Sotib olish davomiyligini tanlang.** __Davomiylik qancha uzoq bo'lsa, chegirma shuncha katta bo'ladi!__👇",
+        "btn_buy": "💳 Premium sotib olish",
+        "btn_buy_vip": "💳 VIP sotib olish",
+        "packages": "📦 **Paketni tanlang:**",
+        "back": "🔙 Orqaga",
+        "payment_method": "💳 **To'lov usulini tanlang:**",
+        "choose_network": "🌐 **Tarmoqni tanlang:**",
+        "success": "🎉 **To'lov muvaffaqiyatli!**\n\nPremium obunangiz {expiry} gacha faol.",
+        "close": "❌ Yopish",
+        "days": {
+            "7": "1 hafta",
+            "30": "1 oy",
+            "90": "3 oy",
+            "180": "6 oy",
+            "360": "1 yil"
+        },
+        "sub_required": "⭐️😔 **Obuna talab qilinadi**\n\nBu xususiyatdan foydalanish uchun sizda obuna bo'lishi kerak.",
+        "sub_required_sticker": "⭐️😔 **Obuna talab qilinadi**\n\nMaxsus stikerlarni yuborish uchun sizda obuna bo'lishi kerak.",
+        "crypto_message": "💰 **Quyidagi rekvizitlarga aniq summani yuboring:**\n\n💵 **Jami summa:** $`{}`\n🌐 **Tarmoq:** {}\n\n👛 **Depozit manzili:** `{}`\n\n⚠️ **DIQQAT:** To'lovni amalga oshirish uchun atigi **15 daqiqa** vaqtingiz bor. [‎]({})\n\n__Agar summa talab qilinganidan kam bo'lsa, to'lov e'tiborga olinmasligi mumkin.__",
+        "error_payment": "😔 **To'lov jarayonida xatolik yuz berdi**",
+        "successful_payment_crypto": "🥳 *To'lov muvaffaqiyatli!*\n\nPremium obunangiz {expiry} da tugaydi.",
+        "pay_info": "**Quyidagi tugma orqali to'lovni yakunlang** 👇💳",
+        "pay_btn": "⭐️ To'lash",
+        "pay_btn_crypto": "₿ To'lash",
+        "type_payments": {
+            "stars": "⭐️ Stars",
+            "crypto": {
+                "usdt": "₿ USDT"
+            }
+        },
+        "expired": "⏳😔 **Obunangiz muddati tugadi!**\n\nEksklyuziv imtiyozlardan foydalanishda davom etish uchun hoziroq yangilang.",
+        "status_active": "⏳ **Obunangiz Faol!**\n\n💎 **Reja:** {plan}\n📅 **Tugash muddati:** {expiry}",
+        "upgrade_to_vip": "⭐️ **VIP ga yuksalish!**\n\n💎 Bu xususiyatdan foydalanish uchun obunangizni **VIP** ga yangilang ✨"
+    },
+    "about_text": "🤖 **Flirty Bot Haqida**\n\nFlirty sizning ilg'or anonim suhbatdoshingiz! 🚀\n\n**Asosiy Xususiyatlar:**\n🎲 **Tasodifiy Suhbat:** Notanishlar bilan darhol bog'laning.\n🚻 **Jinsni Tanlash:** Erkaklar yoki Ayollar bilan suhbatlashishni tanlang (Premium).\n😈 **Qaynoq Qizlar (18+):** Qizg'in suhbatlar uchun tasdiqlangan kattalar rejimi.\n\n**Premium Imtiyozlar:**\n✨ Jins Filtri\n📸 Rasm/Video Ulashish\n🚫 Reklama Yo'q\n🌐 Real vaqtda tarjima\n\nAnonim qoling va zavqlaning! 🛡️",
+    "ban_alert": "🚫 **Siz bloklandingiz!** 😔\n\nSiz botdan foydalana olmaysiz",
+    "unban_alert": "🎉 **Tabriklaymiz! Siz blokdan chiqarildingiz!**\n\nEndi botdan yana foydalanishingiz mumkin. Suhbatdan zavqlaning! 😉",
+    "unban_btn": "💳 Blokdan chiqarishni sotib olish",
+    "unban_buy": "✨ **Blokdan chiqarish** uchun quyidagi tugmani bosing! 💳",
+    "unban_too_many": "🚫 Siz 5 ta bloklanish chegarasiga yetdingiz!\n\nSiz botdan foydalana olmaysiz",
+    "report": {
+        "btn": "🚨 Foydalanuvchi ustidan shikoyat qilish",
+        "text": "🚨 **Foydalanuvchi ustidan shikoyat qilish**\n\n__Foydalanuvchi ustidan shikoyat qilish sababini tanlang__",
+        "reason": {
+            "spam": "📰 Spam",
+            "selling": "🛒 Sotish",
+            "child": "🔞 Bolalar pornografiyasi",
+            "insults": "🤬 Haqoratlar"
+        },
+        "success": "🚨 **Foydalanuvchi ustidan muvaffaqiyatli shikoyat qilindi!**\n\n🙏 Jamiyatni xavfsiz saqlashga yordam berganingiz uchun rahmat!",
+        "no_user": "⚠️ Shikoyat qilish uchun yaqinda foydalanuvchi topilmadi."
+    },
+    "comingsoon": "⚡ __Bu xususiyat tez orada paydo bo'ladi__",
+    "vip_label": "👑 **Siz VIP foydalanuvchi bilan suhbatlashmoqdasiz**\n",
+    "captcha": {
+        "go": "🧩 **Captchani yakunlang**",
+        "expired": "⏳⚠️ **Captcha muddati tugadi!**\n\nIltimos, qayta urinib ko'ring. 🔄",
+        "failed": "❌ Captcha Muvaffaqiyatsiz"
+    },
+    "feedback": {
+        "already_submitted": "✅ **Siz allaqachon fikr bildirgansiz!**\n\n🙏 His safaringiz uchun rahmat.",
+        "prompt": "📝 **Biz sizning fikringizni kutmoqdamiz!**\n\nQisqa xabaringizni quyida yozing 👇\n⚡ Maks. 200 belgi",
+        "too_long": "⚠️ **Xabar juda uzun!**\n\n📏 Joriy uzunlik: **{count}**/200 belgi\n✂️ Iltimos, xabaringizni qisqartiring va `/feedback` bilan qayta urinib ko'ring.",
+        "success": "🎉 **Fikringiz uchun rahmat!**\n\n✅ Sizning xabaringiz muvaffaqiyatli qabul qilindi.\n\n🙏 Biz sizning vaqtingizni qadrlaymiz!",
+        "error": "❌ **Voy, nimadur xato ketdi!**\n\n🔄 Iltimos, keyinroq qayta urinib ko'ring.",
+        "timeout": "⏰ **Vaqt tugadi!**\n\nSiz vaqtida javob bermadingiz.\n💡 Qayta boshlash uchun `/feedback` yozing."
+    }
+}

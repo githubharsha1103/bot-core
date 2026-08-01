@@ -1,0 +1,82 @@
+{
+    "currency": "$",
+    "star_payment": true,
+    "promocodes": {
+        "GET10OFF": {
+            "value": 10,
+            "active": false
+        }
+    },
+    "premium": {
+        "packages": [
+            {
+                "id": 2,
+                "price": [
+                    350,
+                    349
+                ],
+                "duration": 30
+            },
+            {
+                "id": 3,
+                "price": [
+                    500,
+                    699
+                ],
+                "duration": 90
+            },
+            {
+                "id": 4,
+                "price": [
+                    800,
+                    1299
+                ],
+                "duration": 180
+            },
+            {
+                "id": 5,
+                "price": [
+                    1500,
+                    2499
+                ],
+                "duration": 360
+            }
+        ]
+    },
+    "vip": {
+        "packages": [
+            {
+                "id": 1,
+                "price": [
+                    500,
+                    999
+                ],
+                "duration": 30
+            },
+            {
+                "id": 2,
+                "price": [
+                    1000,
+                    1999
+                ],
+                "duration": 90
+            },
+            {
+                "id": 3,
+                "price": [
+                    1500,
+                    2999
+                ],
+                "duration": 180
+            },
+            {
+                "id": 4,
+                "price": [
+                    2500,
+                    4999
+                ],
+                "duration": 360
+            }
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+[project]
+name = "flirtybot"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.14"
+dependencies = [
+    "aiohttp>=3.13.3",
+    "Kurigram",
+    "pillow>=12.2.0",
+    "pymongo>=4.17.0",
+    "python-dotenv>=1.2.2",
+    "tgcrypto>=1.2.5",
+    "uvloop>=0.22.1",
+    "valkey>=6.1.1",
+]
+[tool.uv]
+override-dependencies = [
+    "pydantic"
+]
+
+[tool.uv.sources]
+Kurigram = { path = "kurigram-dev", editable = true }

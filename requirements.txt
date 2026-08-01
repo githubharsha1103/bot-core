@@ -1,0 +1,9 @@
+TGCrypto
+pymongo
+valkey
+uvloop
+python-dotenv
+aiohttp
+quart
+pillow
+aiohttp
