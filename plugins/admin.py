@@ -7,11 +7,18 @@ import aiohttp
 
 from utils import storage, ADMINS, get_available_languages, get_message, database, custom_filters, CHANNEL_ID, CREATORS, broadcast_manager, GROUP_ID, update_subscription_price
 import asyncio
-from datetime import datetime, timedelta, UTC
+from datetime import datetime, timedelta, timezone
 import json
 
 processed_media_groups = {}
 READFEED_PER_PAGE = 1
+
+if custom_filters is None:
+    class _CustomFiltersStub:
+        def in_chat(self):
+            return filters.all
+
+    custom_filters = _CustomFiltersStub()
 
 async def _build_feedback_page(page: int):
     """Build the text and inline keyboard for a single feedback entry."""
@@ -169,48 +176,82 @@ async def refund(client: Client, message: Message):
 @Client.on_message(filters.command(["subp", 'subv']) & filters.user(ADMINS), group=-10)
 async def subadd(client: Client, message: Message):
     args = message.text.split()
-    if len(args) > 1:
+    if len(args) != 3:
+        await message.reply("Usage:\n/subp <user_id> <days>\n/subv <user_id> <days>")
+        message.stop_propagation()
+        return
+
+    try:
         user = int(args[1])
-        expires_at = datetime.now(UTC) + timedelta(days=int(args[2]))
-        subscription_data = {
-            "active": True,
-            "expires_at": expires_at,
-            "plan": "premium" if args[0].lower() == "/subp" else "vip"
-        }
+        days = int(args[2])
+    except ValueError:
+        await message.reply("Usage:\n/subp <user_id> <days>\n/subv <user_id> <days>")
+        message.stop_propagation()
+        return
 
-        if args[0].lower() == "/subv":
-            await client.unban_chat_member(GROUP_ID, user)
+    expires_at = datetime.now(timezone.utc) + timedelta(days=days)
+    expires_at_str = expires_at.isoformat()
+    subscription_data = {
+        "active": True,
+        "expires_at": expires_at_str,
+        "plan": "premium" if args[0].lower() == "/subp" else "vip"
+    }
 
-        await database.update_user(user, {"subscription": subscription_data})
-        verify_user = await storage.get_user(user)
-        if verify_user:
-            subscription_data["expires_at"] = expires_at.isoformat()
-            verify_user["subscription"] = subscription_data
-            await storage.set_user(user, verify_user)
-            
-            # Add to expiration queue
-            await storage.add_subscription(user, expires_at.timestamp())
-        await message.reply(f"User {user} added to premium users!")
+    if args[0].lower() == "/subv":
+        await client.unban_chat_member(GROUP_ID, user)
+
+    await database.update_user(user, {"subscription": subscription_data})
+    verify_user = await storage.get_user(user)
+    if verify_user:
+        verify_user["subscription"] = subscription_data
+        await storage.set_user(user, verify_user)
+        
+        # Add to expiration queue
+        await storage.add_subscription(user, expires_at.timestamp())
+    await message.reply(f"User {user} added to premium users!")
     message.stop_propagation()
 
 @Client.on_message(filters.command("subr") & filters.user(ADMINS), group=-10)
 async def subremove(client: Client, message: Message):
     args = message.text.split()
-    if len(args) > 1:
-        user = int(args[1])
-        await database.update_user(user, {"subscription.active": False})
-        verify_user = await storage.get_user(user)
-        if verify_user:
-            verify_user["subscription"]["active"] = False
-            await storage.set_user(user, verify_user)
+    if len(args) != 2:
+        await message.reply("Usage:\n/subr <user_id>")
+        message.stop_propagation()
+        return
 
+    try:
+        user = int(args[1])
+    except ValueError:
+        await message.reply("Usage:\n/subr <user_id>")
+        message.stop_propagation()
+        return
+
+    await database.update_user(user, {"subscription.active": False})
+    verify_user = await storage.get_user(user)
+    if verify_user:
+        subscription_data = verify_user.get("subscription")
+        if isinstance(subscription_data, str):
+            try:
+                subscription_data = json.loads(subscription_data)
+            except (TypeError, ValueError):
+                subscription_data = {}
+        elif not isinstance(subscription_data, dict):
+            subscription_data = {}
+
+        subscription_data["active"] = False
+        verify_user["subscription"] = subscription_data
+        await storage.set_user(user, verify_user)
+
+        try:
             get_user = await client.get_chat_member(GROUP_ID, user)
             if get_user and get_user.status == ChatMemberStatus.MEMBER:
                 await client.ban_chat_member(GROUP_ID, user)
+        except Exception:
+            pass
 
-            # Remove from expiration queue
-            await storage.remove_subscription(user)
-        await message.reply(f"User {user} removed from premium users!")
+        # Remove from expiration queue
+        await storage.remove_subscription(user)
+    await message.reply(f"User {user} removed from premium users!")
     message.stop_propagation()
 
 @Client.on_message(filters.command('creators') & filters.user(ADMINS), group=-10)
@@ -227,11 +268,11 @@ async def forward(client: Client, message: Message):
         message.stop_propagation()
         return
 
-    processed_media_groups[message.media_group_id] = datetime.now(UTC).timestamp()
+    processed_media_groups[message.media_group_id] = datetime.now(timezone.utc).timestamp()
     
     # Cleanup old entries
     for key in list(processed_media_groups.keys()):
-        if datetime.now(UTC).timestamp() - processed_media_groups[key] > 60:
+        if datetime.now(timezone.utc).timestamp() - processed_media_groups[key] > 60:
             del processed_media_groups[key]
 
     new_media = await client.copy_media_group(CHANNEL_ID, message.chat.id, message.id)
