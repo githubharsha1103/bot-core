@@ -165,6 +165,31 @@ def convert_types(data: dict):
             except:
                 pass
     return data
+
+def normalize_expires_at(expires_at):
+    """Return a backward-compatible string representation for expires_at."""
+    if isinstance(expires_at, datetime):
+        return expires_at.isoformat()
+    if isinstance(expires_at, str) or expires_at is None:
+        return expires_at
+    return str(expires_at)
+
+def normalize_subscription(subscription):
+    """Normalize subscription payloads for Redis/Mongo round-tripping."""
+    if not isinstance(subscription, dict):
+        return subscription
+
+    normalized = subscription.copy()
+    if "expires_at" in normalized:
+        normalized["expires_at"] = normalize_expires_at(normalized.get("expires_at"))
+    return normalized
+
+def serialize_redis_value(value):
+    if isinstance(value, dict):
+        return json.dumps({k: serialize_redis_value(v) if isinstance(v, dict) else normalize_expires_at(v) for k, v in value.items()})
+    if isinstance(value, datetime):
+        return value.isoformat()
+    return value
 def load_admins():
     ADMINS.clear()
     ADMINS.extend(list(map(int, os.getenv("ADMIN_ID").split(","))))
@@ -368,9 +393,8 @@ class Storage:
                                 full_userdata[k] = int(v)
                             elif isinstance(v, dict):
                                 if k == 'subscription':
-                                    if v.get('expires_at'):
-                                        v['expires_at'] = v['expires_at'].isoformat()
-                                full_userdata[k] = json.dumps(v)
+                                    v = normalize_subscription(v)
+                                full_userdata[k] = json.dumps(v, default=normalize_expires_at)
                             else:
                                 full_userdata[k] = v
                     
@@ -396,9 +420,8 @@ class Storage:
                         userdata[k] = int(v)
                     elif isinstance(v, dict):
                         if k == 'subscription':
-                            if v.get('expires_at'):
-                                v['expires_at'] = v['expires_at'].isoformat()
-                        userdata[k] = json.dumps(v)
+                            v = normalize_subscription(v)
+                        userdata[k] = json.dumps(v, default=normalize_expires_at)
                     else:
                         userdata[k] = v
             
@@ -412,7 +435,11 @@ class Storage:
         redis_data = data.copy()
         for k, v in redis_data.items():
             if isinstance(v, dict):
-                redis_data[k] = json.dumps(v)
+                if k == "subscription":
+                    v = normalize_subscription(v)
+                redis_data[k] = json.dumps(v, default=normalize_expires_at)
+            elif isinstance(v, datetime):
+                redis_data[k] = v.isoformat()
 
         async with self.client.pipeline() as pipe:
             if with_delete:
@@ -800,5 +827,4 @@ else:
     chat_queue = None
     payments = None
     broadcast_manager = None
-
 

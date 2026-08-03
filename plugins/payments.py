@@ -65,7 +65,7 @@ async def successful_payment(client: Client, message: Message):
             # Subscription data
             subscription_data = {
                 "active": True,
-                "expires_at": expires_at,
+                "expires_at": expires_at.isoformat(),
                 "plan": plan_type
             }
             if user.get('refId', 'tg') not in ['tg', 'fb'] and not user.get('refId', 'tg').startswith('_tgr'):
@@ -97,7 +97,6 @@ async def successful_payment(client: Client, message: Message):
             await database.update_user(message.from_user.id, {"subscription": subscription_data})
             
             # Update Cache
-            subscription_data["expires_at"] = expires_at.isoformat()
             user["subscription"] = subscription_data
             await storage.set_user(message.from_user.id, user)
             
