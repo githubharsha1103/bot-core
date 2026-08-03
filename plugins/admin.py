@@ -198,7 +198,10 @@ async def subadd(client: Client, message: Message):
     }
 
     if args[0].lower() == "/subv":
-        await client.unban_chat_member(GROUP_ID, user)
+        try:
+            await client.unban_chat_member(GROUP_ID, user)
+        except Exception:
+            pass
 
     await database.update_user(user, {"subscription": subscription_data})
     verify_user = await storage.get_user(user)

@@ -67,6 +67,31 @@ class AdminSubscriptionCommandTests(unittest.TestCase):
         self.assertTrue(remove_subscription_mock.await_count >= 1)
         message.reply.assert_awaited_once()
 
+    def test_subv_continues_when_unban_fails(self):
+        message = types.SimpleNamespace(
+            text="/subv 42 7",
+            reply=AsyncMock(),
+            stop_propagation=lambda: None,
+        )
+        client = types.SimpleNamespace(
+            unban_chat_member=AsyncMock(side_effect=Exception("unban failed"))
+        )
+
+        with patch.object(admin.database, "update_user", new=AsyncMock()) as update_user_mock, \
+             patch.object(admin.storage, "get_user", new=AsyncMock(return_value={"subscription": {}})) as get_user_mock, \
+             patch.object(admin.storage, "set_user", new=AsyncMock()) as set_user_mock, \
+             patch.object(admin.storage, "add_subscription", new=AsyncMock()) as add_subscription_mock:
+            import asyncio
+            asyncio.run(admin.subadd(client, message))
+
+        self.assertTrue(update_user_mock.await_count >= 1)
+        payload = update_user_mock.await_args.args[1]["subscription"]
+        self.assertEqual(payload["plan"], "vip")
+        self.assertTrue(get_user_mock.await_count >= 1)
+        self.assertTrue(set_user_mock.await_count >= 1)
+        self.assertTrue(add_subscription_mock.await_count >= 1)
+        message.reply.assert_awaited_once()
+
 
 if __name__ == "__main__":
     unittest.main()
